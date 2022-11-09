@@ -1,0 +1,26 @@
+.company-card {
+  margin-top: 18rem;
+  background-color: #edebe4;
+
+  & ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8rem 0;
+    & img {
+      width: 75%;
+    }
+
+    @media (min-width: 850px) {
+      max-width: 1400px;
+      margin: 0 auto;
+      & img {
+        width: 100%;
+      }
+    }
+
+    & li:last-child {
+      margin-bottom: 0.45rem;
+    }
+  }
+}

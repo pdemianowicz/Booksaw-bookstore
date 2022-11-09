@@ -1,0 +1,43 @@
+.section-newsletter {
+  padding: 10rem 1rem;
+  background-color: #edebe4;
+  @media (min-width: 850px) {
+    padding: 14rem 1rem;
+    background-image: url(../images/newsletter-bg-left.svg), url(../images/newsletter-bg-right.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  .newsletter {
+    @include flex-center-column;
+    text-align: center;
+    gap: 5rem;
+    @media (min-width: 850px) {
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-direction: row;
+      text-align: left;
+      gap: 10rem;
+    }
+
+    &__title {
+      @include font($Prata, 400);
+      font-size: 4.8rem;
+      color: $dark-color;
+      max-width: 353px;
+      position: relative;
+      @media (min-width: 850px) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 50px;
+          height: 50px;
+          background-image: url(../images/best-selling-book-vector.svg);
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}

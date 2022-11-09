@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/1.jpg" />
+    <title>Booksaw bookstore</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;700&family=Plus+Jakarta+Sans:wght@400;500&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./disc/style.css" />
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__top">
+          <ul class="social-nav">
+            <li>
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="currentColor"
+                  d="M5.627 0C3.656 0 2.5 1.041 2.5 3.413V5.5H0V8H2.5V14H5V8H7L7.5 5.5H5V3.836C5 2.9425
+              5.2915 2.5 6.13 2.5H7.5V0.1025C7.263 0.0705 6.5725 0 5.627 0Z"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.7345 0C1.959 0 0.5 1.457 0.5 3.2345V7.7655C0.5 9.541 1.957 11 3.7345 11H8.2655C10.041 11 11.5 9.543 11.5 7.7655V3.235C11.5 1.459 10.043 0 8.2655 0H3.7345ZM3.7345 1H8.2655C8.55905 0.999605 8.84979 1.05713 9.12107 1.16929C9.39235 1.28144 9.63884 1.44602 9.84641 1.65359C10.054 1.86116 10.2186 2.10765 10.3307 2.37893C10.4429 2.65021 10.5004 2.94095 10.5 3.2345V7.7655C10.5004 8.05905 10.4429 8.34979 10.3307 8.62107C10.2186 8.89235 10.054 9.13884 9.84641 9.34641C9.63884 9.55398 9.39235 9.71856 9.12107 9.83071C8.84979 9.94287 8.55905 10.0004 8.2655 10H3.735C3.44141 10.0005 3.15061 9.94298 2.87927 9.83086C2.60794 9.71873 2.36139 9.55417 2.15377 9.34659C1.94614 9.13901 1.78152 8.8925 1.66933 8.62119C1.55715 8.34988 1.4996 8.05909 1.5 7.7655V3.235C1.49954 2.94141 1.55702 2.65061 1.66914 2.37927C1.78127 2.10794 1.94583 1.86139 2.15341 1.65377C2.36099 1.44614 2.6075 1.28152 2.87881 1.16933C3.15012 1.05715 3.44091 0.999605 3.7345 1ZM8.953 2.094C8.89344 2.09374 8.83441 2.10527 8.77933 2.12794C8.72425 2.15062 8.67421 2.18397 8.63209 2.22609C8.58997 2.26821 8.55661 2.31825 8.53394 2.37333C8.51127 2.42841 8.49974 2.48744 8.5 2.547C8.5 2.799 8.701 3 8.953 3C9.0126 3.00033 9.07168 2.98884 9.12682 2.9662C9.18196 2.94356 9.23206 2.91021 9.27423 2.86809C9.3164 2.82596 9.34981 2.7759 9.37251 2.72078C9.39521 2.66567 9.40676 2.60661 9.4065 2.547C9.40676 2.48739 9.39521 2.42833 9.37251 2.37322C9.34981 2.3181 9.3164 2.26804 9.27423 2.22591C9.23206 2.18379 9.18196 2.15044 9.12682 2.1278C9.07168 2.10516 9.0126 2.09367 8.953 2.094ZM6 2.5C4.35 2.5 3 3.85 3 5.5C3 7.15 4.35 8.5 6 8.5C7.65 8.5 9 7.15 9 5.5C9 3.85 7.65 2.5 6 2.5ZM6 3.5C7.1115 3.5 8 4.3885 8 5.5C8 6.6115 7.1115 7.5 6 7.5C4.8885 7.5 4 6.6115 4 5.5C4 4.3885 4.8885 3.5 6 3.5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.8215 3.78751e-07C1.64805 -0.000130987 1.47627 0.0339112 1.31597 0.100182C1.15568 0.166454 1.01001 0.263656 0.887296 0.386235C0.764577 0.508815 0.667209 0.654371 0.600756 0.814589C0.534303 0.974807 0.500066 1.14655 0.5 1.32C0.5 2.05 1.0915 2.655 1.82 2.655C2.5495 2.655 3.1415 2.05 3.1415 1.321C3.14163 1.14757 3.10759 0.975816 3.04131 0.815551C2.97503 0.655286 2.87782 0.509652 2.75523 0.386973C2.63265 0.264294 2.48709 0.166974 2.32687 0.100575C2.16666 0.0341761 1.99493 3.28984e-07 1.8215 3.78751e-07ZM8.2675 3.5C7.158 3.5 6.5235 4.08 6.2185 4.657H6.1865V3.6555H4V11H6.2785V7.3645C6.2785 6.4065 6.3505 5.4805 7.536 5.4805C8.7045 5.4805 8.7215 6.573 8.7215 7.425V11H11V6.966C11 4.992 10.5755 3.5 8.2675 3.5ZM0.6815 3.655V11H2.9615V3.655H0.6815Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 1.15715C11.5507 1.35606 11.074 1.48634 10.586 1.54365C11.0998 1.23599 11.4843 0.75214 11.668 0.182145C11.1848 0.468514 10.6564 0.670723 10.1055 0.780145C9.76798 0.419321 9.32971 0.168394 8.84768 0.0599907C8.36564 -0.0484125 7.86214 -0.00927573 7.40264 0.172312C6.94315 0.353899 6.54891 0.669536 6.27121 1.07818C5.9935 1.48682 5.84517 1.96957 5.8455 2.46365C5.8455 2.65715 5.867 2.84465 5.9105 3.02415C4.93126 2.97595 3.97316 2.72195 3.09864 2.2787C2.22413 1.83546 1.45283 1.21292 0.835 0.451645C0.615488 0.827398 0.500352 1.25497 0.5015 1.69015C0.5015 2.54365 0.935 3.29765 1.597 3.73915C1.20598 3.72674 0.823629 3.62078 0.482 3.43015V3.46165C0.481662 4.03023 0.678215 4.5814 1.03826 5.02147C1.3983 5.46154 1.89961 5.76336 2.457 5.87565C2.09453 5.97505 1.71406 5.98976 1.345 5.91865C1.5022 6.4078 1.80827 6.83563 2.22044 7.14239C2.63261 7.44914 3.13031 7.61949 3.644 7.62965C3.13332 8.03048 2.54861 8.32667 1.92332 8.50127C1.29804 8.67587 0.644464 8.72544 0 8.64715C1.12526 9.37128 2.43537 9.75579 3.7735 9.75465C8.3025 9.75465 10.7795 6.00265 10.7795 2.74865C10.7795 2.64365 10.7755 2.53565 10.7715 2.43015C11.2528 2.08167 11.6687 1.65088 12 1.15765V1.15715Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </li>
+            <li>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3 0C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V6.5C0 7.29565 0.316071 8.05871 0.87868 8.62132C1.44129 9.18393 2.20435 9.5 3 9.5H6.5C7.29565 9.5 8.05871 9.18393 8.62132 8.62132C9.18393 8.05871 9.5 7.29565 9.5 6.5V4C9.5 3.86739 9.44732 3.74021 9.35355 3.64645C9.25979 3.55268 9.13261 3.5 9 3.5H8.5C8.36739 3.5 8.24021 3.44732 8.14645 3.35355C8.05268 3.25979 8 3.13261 8 3C8 2.20435 7.68393 1.44129 7.12132 0.87868C6.55871 0.316071 5.79565 0 5 0H3ZM3 2.5H5C5.275 2.5 5.5 2.725 5.5 3C5.5 3.275 5.275 3.5 5 3.5H3C2.725 3.5 2.5 3.275 2.5 3C2.5 2.725 2.725 2.5 3 2.5ZM3 6H6.5C6.775 6 7 6.225 7 6.5C7 6.775 6.775 7 6.5 7H3C2.725 7 2.5 6.775 2.5 6.5C2.5 6.225 2.725 6 3 6Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </li>
+          </ul>
+
+          <ul class="account-nav">
+            <li>
+              <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6 0C3.687 0 1.8 1.85841 1.8 4.13636C1.8 5.56045 2.538 6.825 3.6564 7.57132C1.5162 8.47541 0 10.5672 0 13H1.2C1.2 10.3823 3.342 8.27273 6 8.27273C8.658 8.27273 10.8 10.3823 10.8 13H12C12 10.5672 10.4838 8.476 8.3436 7.57073C8.91441 7.19123 9.38209 6.67975 9.70572 6.08104C10.0293 5.48233 10.1991 4.81463 10.2 4.13636C10.2 1.85841 8.313 0 6 0ZM6 1.18182C7.6638 1.18182 9 2.49777 9 4.13636C9 5.77495 7.6638 7.09091 6 7.09091C4.3362 7.09091 3 5.77495 3 4.13636C3 2.49777 4.3362 1.18182 6 1.18182Z"
+                  fill="#111111"
+                />
+              </svg>
+              <a href="#"> Account</a>
+            </li>
+            <li>
+              <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.53025 0C4.15756 0 3.03082 1.12675 3.03082 2.49943V2.99932H0.562373L0.53138 3.46822L0.031493 12.4662L0 12.9971H11.06L11.029 12.4657L10.5291 3.46772L10.4976 2.99932H8.02969V2.49943C8.02969 1.12675 6.90294 0 5.53025 0ZM5.53025 0.999774C5.92798 0.999774 6.30943 1.15777 6.59067 1.43901C6.87191 1.72026 7.02991 2.1017 7.02991 2.49943V2.99932H4.03059V2.49943C4.03059 2.1017 4.18859 1.72026 4.46983 1.43901C4.75107 1.15777 5.13252 0.999774 5.53025 0.999774V0.999774ZM1.49966 3.9991H3.03082V5.49876H4.03059V3.9991H7.02991V5.49876H8.02969V3.9991H9.56084L9.99824 11.9973H1.06276L1.49966 3.9991Z"
+                  fill="#111111"
+                />
+              </svg>
+
+              <a href="#"> Cart: <span class="cart-amount">(0$)</span></a>
+            </li>
+            <li>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.85981 0C5.1037 0 2.85961 2.24409 2.85961 5.00019C2.85961 6.19774 3.27963 7.29528 3.98465 8.15682L0 12.1405L0.719528 12.8605L4.70368 8.87585C5.59349 9.60534 6.70919 10.0029 7.85981 10.0004C10.6159 10.0004 12.86 7.7563 12.86 5.00019C12.86 2.24409 10.6159 0 7.85981 0ZM7.85981 1.00004C10.0749 1.00004 11.86 2.78511 11.86 5.00019C11.86 7.21528 10.0749 9.00035 7.85981 9.00035C5.64472 9.00035 3.85965 7.21528 3.85965 5.00019C3.85965 2.78511 5.64472 1.00004 7.85981 1.00004Z"
+                  fill="#111111"
+                />
+              </svg>
+              <a href="#"> Search </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="logo">
+          <p>BOOK</p>
+        </div>
+
+        <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">MENU</span>
+        </button>
+
+        <nav>
+          <ul class="primary-nav" id="primary-nav" data-visible="false">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="section-hero__image">
+          <img src="./images/hero-book.png" alt="Life Of The Wild - book" />
+        </div>
+        <div class="section-hero__text">
+          <h1>Life Of The Wild</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.
+            Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu.
+          </p>
+          <button class="btn btn__primary">Read more <span class="arrow-right"></span></button>
+        </div>
+      </section>
+
+      <section class="company-card">
+        <ul>
+          <li><img src="./images/1.png" alt="Booksaw logo" /></li>
+          <li><img src="./images/2.png" alt="Bookstore logo" /></li>
+          <li><img src="./images/3.png" alt="Bookdoor logo" /></li>
+          <li><img src="./images/4.png" alt="Library logo" /></li>
+          <li><img src="./images/5.png" alt="Flaprise logo" /></li>
+        </ul>
+      </section>
+
+      <section class="section-featured-books">
+        <div class="featured-books">
+          <p class="featured-books__info">Some quality items</p>
+          <h2 class="featured-books__title hr-sect">Featured Books</h2>
+          <div class="featured-books-wrapper">
+            <div class="book-card">
+              <img class="book-card__image" src="./images/simple-way-of-piecce-life.png" alt="" />
+              <h3 class="book-card__title">Simple Way Of Piece Life</h3>
+              <p class="book-card__autor">Armor Ramsey</p>
+              <p class="book-card__price">$ 40.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/great-trawel-at-desert.png" alt="" />
+              <h3 class="book-card__title">Great Travel At Desert</h3>
+              <p class="book-card__autor">Sanchit Howdy</p>
+              <p class="book-card__price">$ 38.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/the-lady-beauty-scarlett.png" alt="" />
+              <h3 class="book-card__title">The Lady Beauty Scarlett</h3>
+              <p class="book-card__autor">Arthur Doyle</p>
+              <p class="book-card__price">$ 45.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/once-upon-a-time.png" alt="" />
+              <h3 class="book-card__title">Once Upon A Time</h3>
+              <p class="book-card__autor">Klien Marry</p>
+              <p class="book-card__price">$ 35.00</p>
+            </div>
+          </div>
+          <div class="pagination">
+            <ul>
+              <li>
+                <span class="dot dot--active"></span>
+              </li>
+              <li>
+                <span class="dot"></span>
+              </li>
+              <li>
+                <span class="dot"></span>
+              </li>
+            </ul>
+            <p class="pagination__view-all">View all products<span class="arrow-right"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-best-book">
+        <div class="best-book">
+          <div class="best-book__image">
+            <img src="./images/best-book.png" alt="" />
+          </div>
+          <div class="best-book__info">
+            <h2 class="best-book__title">Best Selling Book</h2>
+            <p class="best-book__autor">By Timbur Hood</p>
+            <h3 class="best-book__book-name">Birds Gonna Be Happy</h3>
+            <p class="best-book__book-info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra
+              hac.
+            </p>
+            <p class="best-book__price">$ 45.00</p>
+            <p class="best-book__shop-now">Shop It Now <span class="arrow-right"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-popular-books">
+        <div class="popular-books">
+          <p class="popular-books__info">Some quality items</p>
+          <h2 class="popular-books__title hr-sect">Popular Books</h2>
+          <ul class="popular-books__nav">
+            <li class="popular-books__nav--active"><a href="#">All Genre</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Adventure</a></li>
+            <li><a href="#">Romantic</a></li>
+            <li><a href="#">Fictional</a></li>
+          </ul>
+          <div class="popular-books-wrapper">
+            <div class="book-card">
+              <img class="book-card__image" src="./images/portrait-photography.png" alt="" />
+              <h3 class="book-card__title">Portrait Photography</h3>
+              <p class="book-card__autor">Adam Silber</p>
+              <p class="book-card__price">$ 45.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/once-upon-a-time.png" alt="" />
+              <h3 class="book-card__title">Once upon a time</h3>
+              <p class="book-card__autor">Klien Marry</p>
+              <p class="book-card__price">$ 35.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/tips-of-simple-lifstyle.png" alt="" />
+              <h3 class="book-card__title">Tips Of Simple Lifestyle</h3>
+              <p class="book-card__autor">Bratt Smith</p>
+              <p class="book-card__price">$ 35.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/just-felt-form-outside.png" alt="" />
+              <h3 class="book-card__title">Just Felt From Outside</h3>
+              <p class="book-card__autor">Nicole Wilson</p>
+              <p class="book-card__price">$ 40.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/peaceful-enlightment.png" alt="" />
+              <h3 class="book-card__title">Peaceful Enlightment</h3>
+              <p class="book-card__autor">Marmik Lama</p>
+              <p class="book-card__price">$ 45.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/great-trawel-at-desert.png" alt="" />
+              <h3 class="book-card__title">Great Travel At Desert</h3>
+              <p class="book-card__autor">Sanchit Howdy</p>
+              <p class="book-card__price">$ 38.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/life-among-the-pirates.png" alt="" />
+              <h3 class="book-card__title">Life Among The Pirates</h3>
+              <p class="book-card__autor">Armor Ramsey</p>
+              <p class="book-card__price">$ 40.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/simple-way-of-piecce-life.png" alt="" />
+              <h3 class="book-card__title">Simple Way Of Piece Life</h3>
+              <p class="book-card__autor">David Woodard</p>
+              <p class="book-card__price">$ 38.00</p>
+            </div>
+          </div>
+          <blockquote>
+            <h2>Quote of the day</h2>
+            <p>
+              “The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”
+            </p>
+            <span>Dr. Seuss</span>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section-books-offer">
+        <div class="books-offer">
+          <p class="books-offer__info">Grab your opportunity</p>
+          <h2 class="books-offer__title hr-sect">Books With Offer</h2>
+          <div class="books-offer-wrapper">
+            <div class="book-card">
+              <img class="book-card__image" src="./images/way-of-happiness.png" alt="" />
+              <h3 class="book-card__title">Way Of Happiness</h3>
+              <p class="book-card__autor">Ananda Kumar</p>
+              <p class="book-card__price"><span class="book-card__discount">$ 50.00</span>$ 40.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/fashion-system.png" alt="" />
+              <h3 class="book-card__title">Fashion System</h3>
+              <p class="book-card__autor">Kevin Spear</p>
+              <p class="book-card__price"><span class="book-card__discount">$ 40.00</span>$ 35.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/musical.png" alt="" />
+              <h3 class="book-card__title">Musical</h3>
+              <p class="book-card__autor">Karim Achard</p>
+              <p class="book-card__price"><span class="book-card__discount">$ 45.00</span>$ 36.00</p>
+            </div>
+            <div class="book-card">
+              <img class="book-card__image" src="./images/life-of-seacrits.png" alt="" />
+              <h3 class="book-card__title">Life Of Seacrits</h3>
+              <p class="book-card__autor">Galista Marie</p>
+              <p class="book-card__price"><span class="book-card__discount">$ 45.00</span>$ 32.00</p>
+            </div>
+          </div>
+          <div class="pagination">
+            <ul>
+              <li>
+                <span class="dot dot--active"></span>
+              </li>
+              <li>
+                <span class="dot"></span>
+              </li>
+              <li>
+                <span class="dot"></span>
+              </li>
+            </ul>
+            <p class="pagination__view-all">View all products<span class="arrow-right"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-newsletter">
+        <div class="newsletter">
+          <h2 class="newsletter__title">Subscribe To Our Newsletter</h2>
+          <form action="">
+            <label for="email">
+              Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing enim
+              pharetra hac.
+            </label>
+            <div class="wrapper">
+              <input type="email" id="email" placeholder="Enter Your Email Addresss Here" />
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section-latest-articles">
+        <div class="latest-articles">
+          <p class="latest-articles__info">Read our articles</p>
+          <h2 class="latest-articles__title hr-sect">Latest Articles</h2>
+          <div class="latest-articles-wrapper">
+            <div class="article-card">
+              <img class="article-card__image" src="./images/latest-articles3.jpg" alt="" />
+              <span class="article-card__date">2 Aug, 2021</span>
+              <h3 class="article-card__title">Reading Books Always Makes The Moments Happy</h3>
+              <div class="wrapper">
+                <ul>
+                  <li>Inspiration</li>
+                </ul>
+                <ul>
+                  <li>
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.627 0C3.656 0 2.5 1.041 2.5 3.413V5.5H0V8H2.5V14H5V8H7L7.5 5.5H5V3.836C5 2.9425
+                    5.2915 2.5 6.13 2.5H7.5V0.1025C7.263 0.0705 6.5725 0 5.627 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 1.15715C11.5507 1.35606 11.074 1.48634 10.586 1.54365C11.0998 1.23599 11.4843 0.75214 11.668 0.182145C11.1848 0.468514 10.6564 0.670723 10.1055 0.780145C9.76798 0.419321 9.32971 0.168394 8.84768 0.0599907C8.36564 -0.0484125 7.86214 -0.00927573 7.40264 0.172312C6.94315 0.353899 6.54891 0.669536 6.27121 1.07818C5.9935 1.48682 5.84517 1.96957 5.8455 2.46365C5.8455 2.65715 5.867 2.84465 5.9105 3.02415C4.93126 2.97595 3.97316 2.72195 3.09864 2.2787C2.22413 1.83546 1.45283 1.21292 0.835 0.451645C0.615488 0.827398 0.500352 1.25497 0.5015 1.69015C0.5015 2.54365 0.935 3.29765 1.597 3.73915C1.20598 3.72674 0.823629 3.62078 0.482 3.43015V3.46165C0.481662 4.03023 0.678215 4.5814 1.03826 5.02147C1.3983 5.46154 1.89961 5.76336 2.457 5.87565C2.09453 5.97505 1.71406 5.98976 1.345 5.91865C1.5022 6.4078 1.80827 6.83563 2.22044 7.14239C2.63261 7.44914 3.13031 7.61949 3.644 7.62965C3.13332 8.03048 2.54861 8.32667 1.92332 8.50127C1.29804 8.67587 0.644464 8.72544 0 8.64715C1.12526 9.37128 2.43537 9.75579 3.7735 9.75465C8.3025 9.75465 10.7795 6.00265 10.7795 2.74865C10.7795 2.64365 10.7755 2.53565 10.7715 2.43015C11.2528 2.08167 11.6687 1.65088 12 1.15765V1.15715Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.7345 0C1.959 0 0.5 1.457 0.5 3.2345V7.7655C0.5 9.541 1.957 11 3.7345 11H8.2655C10.041 11 11.5 9.543 11.5 7.7655V3.235C11.5 1.459 10.043 0 8.2655 0H3.7345ZM3.7345 1H8.2655C8.55905 0.999605 8.84979 1.05713 9.12107 1.16929C9.39235 1.28144 9.63884 1.44602 9.84641 1.65359C10.054 1.86116 10.2186 2.10765 10.3307 2.37893C10.4429 2.65021 10.5004 2.94095 10.5 3.2345V7.7655C10.5004 8.05905 10.4429 8.34979 10.3307 8.62107C10.2186 8.89235 10.054 9.13884 9.84641 9.34641C9.63884 9.55398 9.39235 9.71856 9.12107 9.83071C8.84979 9.94287 8.55905 10.0004 8.2655 10H3.735C3.44141 10.0005 3.15061 9.94298 2.87927 9.83086C2.60794 9.71873 2.36139 9.55417 2.15377 9.34659C1.94614 9.13901 1.78152 8.8925 1.66933 8.62119C1.55715 8.34988 1.4996 8.05909 1.5 7.7655V3.235C1.49954 2.94141 1.55702 2.65061 1.66914 2.37927C1.78127 2.10794 1.94583 1.86139 2.15341 1.65377C2.36099 1.44614 2.6075 1.28152 2.87881 1.16933C3.15012 1.05715 3.44091 0.999605 3.7345 1ZM8.953 2.094C8.89344 2.09374 8.83441 2.10527 8.77933 2.12794C8.72425 2.15062 8.67421 2.18397 8.63209 2.22609C8.58997 2.26821 8.55661 2.31825 8.53394 2.37333C8.51127 2.42841 8.49974 2.48744 8.5 2.547C8.5 2.799 8.701 3 8.953 3C9.0126 3.00033 9.07168 2.98884 9.12682 2.9662C9.18196 2.94356 9.23206 2.91021 9.27423 2.86809C9.3164 2.82596 9.34981 2.7759 9.37251 2.72078C9.39521 2.66567 9.40676 2.60661 9.4065 2.547C9.40676 2.48739 9.39521 2.42833 9.37251 2.37322C9.34981 2.3181 9.3164 2.26804 9.27423 2.22591C9.23206 2.18379 9.18196 2.15044 9.12682 2.1278C9.07168 2.10516 9.0126 2.09367 8.953 2.094ZM6 2.5C4.35 2.5 3 3.85 3 5.5C3 7.15 4.35 8.5 6 8.5C7.65 8.5 9 7.15 9 5.5C9 3.85 7.65 2.5 6 2.5ZM6 3.5C7.1115 3.5 8 4.3885 8 5.5C8 6.6115 7.1115 7.5 6 7.5C4.8885 7.5 4 6.6115 4 5.5C4 4.3885 4.8885 3.5 6 3.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="article-card">
+              <img class="article-card__image" src="./images/latest-articles1.jpg" alt="" />
+              <span class="article-card__date">2 Aug, 2021</span>
+              <h3 class="article-card__title">Reading Books Always Makes The Moments Happy</h3>
+              <div class="wrapper">
+                <ul>
+                  <li>Inspiration</li>
+                </ul>
+                <ul>
+                  <li>
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.627 0C3.656 0 2.5 1.041 2.5 3.413V5.5H0V8H2.5V14H5V8H7L7.5 5.5H5V3.836C5 2.9425
+                    5.2915 2.5 6.13 2.5H7.5V0.1025C7.263 0.0705 6.5725 0 5.627 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 1.15715C11.5507 1.35606 11.074 1.48634 10.586 1.54365C11.0998 1.23599 11.4843 0.75214 11.668 0.182145C11.1848 0.468514 10.6564 0.670723 10.1055 0.780145C9.76798 0.419321 9.32971 0.168394 8.84768 0.0599907C8.36564 -0.0484125 7.86214 -0.00927573 7.40264 0.172312C6.94315 0.353899 6.54891 0.669536 6.27121 1.07818C5.9935 1.48682 5.84517 1.96957 5.8455 2.46365C5.8455 2.65715 5.867 2.84465 5.9105 3.02415C4.93126 2.97595 3.97316 2.72195 3.09864 2.2787C2.22413 1.83546 1.45283 1.21292 0.835 0.451645C0.615488 0.827398 0.500352 1.25497 0.5015 1.69015C0.5015 2.54365 0.935 3.29765 1.597 3.73915C1.20598 3.72674 0.823629 3.62078 0.482 3.43015V3.46165C0.481662 4.03023 0.678215 4.5814 1.03826 5.02147C1.3983 5.46154 1.89961 5.76336 2.457 5.87565C2.09453 5.97505 1.71406 5.98976 1.345 5.91865C1.5022 6.4078 1.80827 6.83563 2.22044 7.14239C2.63261 7.44914 3.13031 7.61949 3.644 7.62965C3.13332 8.03048 2.54861 8.32667 1.92332 8.50127C1.29804 8.67587 0.644464 8.72544 0 8.64715C1.12526 9.37128 2.43537 9.75579 3.7735 9.75465C8.3025 9.75465 10.7795 6.00265 10.7795 2.74865C10.7795 2.64365 10.7755 2.53565 10.7715 2.43015C11.2528 2.08167 11.6687 1.65088 12 1.15765V1.15715Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.7345 0C1.959 0 0.5 1.457 0.5 3.2345V7.7655C0.5 9.541 1.957 11 3.7345 11H8.2655C10.041 11 11.5 9.543 11.5 7.7655V3.235C11.5 1.459 10.043 0 8.2655 0H3.7345ZM3.7345 1H8.2655C8.55905 0.999605 8.84979 1.05713 9.12107 1.16929C9.39235 1.28144 9.63884 1.44602 9.84641 1.65359C10.054 1.86116 10.2186 2.10765 10.3307 2.37893C10.4429 2.65021 10.5004 2.94095 10.5 3.2345V7.7655C10.5004 8.05905 10.4429 8.34979 10.3307 8.62107C10.2186 8.89235 10.054 9.13884 9.84641 9.34641C9.63884 9.55398 9.39235 9.71856 9.12107 9.83071C8.84979 9.94287 8.55905 10.0004 8.2655 10H3.735C3.44141 10.0005 3.15061 9.94298 2.87927 9.83086C2.60794 9.71873 2.36139 9.55417 2.15377 9.34659C1.94614 9.13901 1.78152 8.8925 1.66933 8.62119C1.55715 8.34988 1.4996 8.05909 1.5 7.7655V3.235C1.49954 2.94141 1.55702 2.65061 1.66914 2.37927C1.78127 2.10794 1.94583 1.86139 2.15341 1.65377C2.36099 1.44614 2.6075 1.28152 2.87881 1.16933C3.15012 1.05715 3.44091 0.999605 3.7345 1ZM8.953 2.094C8.89344 2.09374 8.83441 2.10527 8.77933 2.12794C8.72425 2.15062 8.67421 2.18397 8.63209 2.22609C8.58997 2.26821 8.55661 2.31825 8.53394 2.37333C8.51127 2.42841 8.49974 2.48744 8.5 2.547C8.5 2.799 8.701 3 8.953 3C9.0126 3.00033 9.07168 2.98884 9.12682 2.9662C9.18196 2.94356 9.23206 2.91021 9.27423 2.86809C9.3164 2.82596 9.34981 2.7759 9.37251 2.72078C9.39521 2.66567 9.40676 2.60661 9.4065 2.547C9.40676 2.48739 9.39521 2.42833 9.37251 2.37322C9.34981 2.3181 9.3164 2.26804 9.27423 2.22591C9.23206 2.18379 9.18196 2.15044 9.12682 2.1278C9.07168 2.10516 9.0126 2.09367 8.953 2.094ZM6 2.5C4.35 2.5 3 3.85 3 5.5C3 7.15 4.35 8.5 6 8.5C7.65 8.5 9 7.15 9 5.5C9 3.85 7.65 2.5 6 2.5ZM6 3.5C7.1115 3.5 8 4.3885 8 5.5C8 6.6115 7.1115 7.5 6 7.5C4.8885 7.5 4 6.6115 4 5.5C4 4.3885 4.8885 3.5 6 3.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="article-card">
+              <img class="article-card__image" src="./images/latest-articles2.jpg" alt="" />
+              <span class="article-card__date">2 Aug, 2021</span>
+              <h3 class="article-card__title">Reading Books Always Makes The Moments Happy</h3>
+              <div class="wrapper">
+                <ul>
+                  <li>Inspiration</li>
+                </ul>
+                <ul>
+                  <li>
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.627 0C3.656 0 2.5 1.041 2.5 3.413V5.5H0V8H2.5V14H5V8H7L7.5 5.5H5V3.836C5 2.9425
+                    5.2915 2.5 6.13 2.5H7.5V0.1025C7.263 0.0705 6.5725 0 5.627 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 1.15715C11.5507 1.35606 11.074 1.48634 10.586 1.54365C11.0998 1.23599 11.4843 0.75214 11.668 0.182145C11.1848 0.468514 10.6564 0.670723 10.1055 0.780145C9.76798 0.419321 9.32971 0.168394 8.84768 0.0599907C8.36564 -0.0484125 7.86214 -0.00927573 7.40264 0.172312C6.94315 0.353899 6.54891 0.669536 6.27121 1.07818C5.9935 1.48682 5.84517 1.96957 5.8455 2.46365C5.8455 2.65715 5.867 2.84465 5.9105 3.02415C4.93126 2.97595 3.97316 2.72195 3.09864 2.2787C2.22413 1.83546 1.45283 1.21292 0.835 0.451645C0.615488 0.827398 0.500352 1.25497 0.5015 1.69015C0.5015 2.54365 0.935 3.29765 1.597 3.73915C1.20598 3.72674 0.823629 3.62078 0.482 3.43015V3.46165C0.481662 4.03023 0.678215 4.5814 1.03826 5.02147C1.3983 5.46154 1.89961 5.76336 2.457 5.87565C2.09453 5.97505 1.71406 5.98976 1.345 5.91865C1.5022 6.4078 1.80827 6.83563 2.22044 7.14239C2.63261 7.44914 3.13031 7.61949 3.644 7.62965C3.13332 8.03048 2.54861 8.32667 1.92332 8.50127C1.29804 8.67587 0.644464 8.72544 0 8.64715C1.12526 9.37128 2.43537 9.75579 3.7735 9.75465C8.3025 9.75465 10.7795 6.00265 10.7795 2.74865C10.7795 2.64365 10.7755 2.53565 10.7715 2.43015C11.2528 2.08167 11.6687 1.65088 12 1.15765V1.15715Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.7345 0C1.959 0 0.5 1.457 0.5 3.2345V7.7655C0.5 9.541 1.957 11 3.7345 11H8.2655C10.041 11 11.5 9.543 11.5 7.7655V3.235C11.5 1.459 10.043 0 8.2655 0H3.7345ZM3.7345 1H8.2655C8.55905 0.999605 8.84979 1.05713 9.12107 1.16929C9.39235 1.28144 9.63884 1.44602 9.84641 1.65359C10.054 1.86116 10.2186 2.10765 10.3307 2.37893C10.4429 2.65021 10.5004 2.94095 10.5 3.2345V7.7655C10.5004 8.05905 10.4429 8.34979 10.3307 8.62107C10.2186 8.89235 10.054 9.13884 9.84641 9.34641C9.63884 9.55398 9.39235 9.71856 9.12107 9.83071C8.84979 9.94287 8.55905 10.0004 8.2655 10H3.735C3.44141 10.0005 3.15061 9.94298 2.87927 9.83086C2.60794 9.71873 2.36139 9.55417 2.15377 9.34659C1.94614 9.13901 1.78152 8.8925 1.66933 8.62119C1.55715 8.34988 1.4996 8.05909 1.5 7.7655V3.235C1.49954 2.94141 1.55702 2.65061 1.66914 2.37927C1.78127 2.10794 1.94583 1.86139 2.15341 1.65377C2.36099 1.44614 2.6075 1.28152 2.87881 1.16933C3.15012 1.05715 3.44091 0.999605 3.7345 1ZM8.953 2.094C8.89344 2.09374 8.83441 2.10527 8.77933 2.12794C8.72425 2.15062 8.67421 2.18397 8.63209 2.22609C8.58997 2.26821 8.55661 2.31825 8.53394 2.37333C8.51127 2.42841 8.49974 2.48744 8.5 2.547C8.5 2.799 8.701 3 8.953 3C9.0126 3.00033 9.07168 2.98884 9.12682 2.9662C9.18196 2.94356 9.23206 2.91021 9.27423 2.86809C9.3164 2.82596 9.34981 2.7759 9.37251 2.72078C9.39521 2.66567 9.40676 2.60661 9.4065 2.547C9.40676 2.48739 9.39521 2.42833 9.37251 2.37322C9.34981 2.3181 9.3164 2.26804 9.27423 2.22591C9.23206 2.18379 9.18196 2.15044 9.12682 2.1278C9.07168 2.10516 9.0126 2.09367 8.953 2.094ZM6 2.5C4.35 2.5 3 3.85 3 5.5C3 7.15 4.35 8.5 6 8.5C7.65 8.5 9 7.15 9 5.5C9 3.85 7.65 2.5 6 2.5ZM6 3.5C7.1115 3.5 8 4.3885 8 5.5C8 6.6115 7.1115 7.5 6 7.5C4.8885 7.5 4 6.6115 4 5.5C4 4.3885 4.8885 3.5 6 3.5Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn__primary">Read all articles<span class="arrow-right"></span></button>
+        </div>
+      </section>
+
+      <section class="section-mobile-app">
+        <div class="mobile-app">
+          <div class="mobile-app__image">
+            <img src="./images/phone.png" alt="" />
+          </div>
+          <div class="mobile-app__info">
+            <h2 class="mobile-app__title">Download Our App Now !</h2>
+            <p class="mobile-app__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus nonet psryroin.
+              Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper erat ac in suspendisse iaculis.
+            </p>
+            <div class="wrapper">
+              <button class="btn btn-mobile-app">
+                <img src="./images/Google Play logo.svg" alt="" />
+                <p>GET IN ON<span>Google Play</span></p>
+              </button>
+              <button class="btn btn-mobile-app">
+                <img src="./images/Apple logo.svg" alt="" />
+                <p>Download on the<span>App Store</span></p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="logo">
+          <p>BOOK</p>
+        </div>
+        <ul>
+          <li>About us</li>
+          <li><a href="#">vision </a></li>
+          <li><a href="#">articles </a></li>
+          <li><a href="#">careers</a></li>
+          <li><a href="#">service terms</a></li>
+          <li><a href="#">donate</a></li>
+        </ul>
+        <ul>
+          <li>Discover</li>
+          <li><a href="#">Home </a></li>
+          <li><a href="#">Books </a></li>
+          <li><a href="#">Authors </a></li>
+          <li><a href="#">Subjects </a></li>
+          <li><a href="#">Advanced Search</a></li>
+        </ul>
+        <ul>
+          <li>My account</li>
+          <li><a href="#">Sign In </a></li>
+          <li><a href="#">View Cart </a></li>
+          <li><a href="#">My Wishtlist </a></li>
+          <li><a href="#">Track My Order </a></li>
+        </ul>
+        <ul>
+          <li>Help</li>
+          <li><a href="#">Help center </a></li>
+          <li><a href="#">Report a problem </a></li>
+          <li><a href="#">Suggesting edits </a></li>
+          <li><a href="#">Contact us </a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer-copyright">© 2021 Templates Jungle. All rights reserved.</p>
+        <ul class="social-nav">
+          <li>
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.627 0C3.656 0 2.5 1.041 2.5 3.413V5.5H0V8H2.5V14H5V8H7L7.5 5.5H5V3.836C5 2.9425
+              5.2915 2.5 6.13 2.5H7.5V0.1025C7.263 0.0705 6.5725 0 5.627 0Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.7345 0C1.959 0 0.5 1.457 0.5 3.2345V7.7655C0.5 9.541 1.957 11 3.7345 11H8.2655C10.041 11 11.5 9.543 11.5 7.7655V3.235C11.5 1.459 10.043 0 8.2655 0H3.7345ZM3.7345 1H8.2655C8.55905 0.999605 8.84979 1.05713 9.12107 1.16929C9.39235 1.28144 9.63884 1.44602 9.84641 1.65359C10.054 1.86116 10.2186 2.10765 10.3307 2.37893C10.4429 2.65021 10.5004 2.94095 10.5 3.2345V7.7655C10.5004 8.05905 10.4429 8.34979 10.3307 8.62107C10.2186 8.89235 10.054 9.13884 9.84641 9.34641C9.63884 9.55398 9.39235 9.71856 9.12107 9.83071C8.84979 9.94287 8.55905 10.0004 8.2655 10H3.735C3.44141 10.0005 3.15061 9.94298 2.87927 9.83086C2.60794 9.71873 2.36139 9.55417 2.15377 9.34659C1.94614 9.13901 1.78152 8.8925 1.66933 8.62119C1.55715 8.34988 1.4996 8.05909 1.5 7.7655V3.235C1.49954 2.94141 1.55702 2.65061 1.66914 2.37927C1.78127 2.10794 1.94583 1.86139 2.15341 1.65377C2.36099 1.44614 2.6075 1.28152 2.87881 1.16933C3.15012 1.05715 3.44091 0.999605 3.7345 1ZM8.953 2.094C8.89344 2.09374 8.83441 2.10527 8.77933 2.12794C8.72425 2.15062 8.67421 2.18397 8.63209 2.22609C8.58997 2.26821 8.55661 2.31825 8.53394 2.37333C8.51127 2.42841 8.49974 2.48744 8.5 2.547C8.5 2.799 8.701 3 8.953 3C9.0126 3.00033 9.07168 2.98884 9.12682 2.9662C9.18196 2.94356 9.23206 2.91021 9.27423 2.86809C9.3164 2.82596 9.34981 2.7759 9.37251 2.72078C9.39521 2.66567 9.40676 2.60661 9.4065 2.547C9.40676 2.48739 9.39521 2.42833 9.37251 2.37322C9.34981 2.3181 9.3164 2.26804 9.27423 2.22591C9.23206 2.18379 9.18196 2.15044 9.12682 2.1278C9.07168 2.10516 9.0126 2.09367 8.953 2.094ZM6 2.5C4.35 2.5 3 3.85 3 5.5C3 7.15 4.35 8.5 6 8.5C7.65 8.5 9 7.15 9 5.5C9 3.85 7.65 2.5 6 2.5ZM6 3.5C7.1115 3.5 8 4.3885 8 5.5C8 6.6115 7.1115 7.5 6 7.5C4.8885 7.5 4 6.6115 4 5.5C4 4.3885 4.8885 3.5 6 3.5Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.8215 3.78751e-07C1.64805 -0.000130987 1.47627 0.0339112 1.31597 0.100182C1.15568 0.166454 1.01001 0.263656 0.887296 0.386235C0.764577 0.508815 0.667209 0.654371 0.600756 0.814589C0.534303 0.974807 0.500066 1.14655 0.5 1.32C0.5 2.05 1.0915 2.655 1.82 2.655C2.5495 2.655 3.1415 2.05 3.1415 1.321C3.14163 1.14757 3.10759 0.975816 3.04131 0.815551C2.97503 0.655286 2.87782 0.509652 2.75523 0.386973C2.63265 0.264294 2.48709 0.166974 2.32687 0.100575C2.16666 0.0341761 1.99493 3.28984e-07 1.8215 3.78751e-07ZM8.2675 3.5C7.158 3.5 6.5235 4.08 6.2185 4.657H6.1865V3.6555H4V11H6.2785V7.3645C6.2785 6.4065 6.3505 5.4805 7.536 5.4805C8.7045 5.4805 8.7215 6.573 8.7215 7.425V11H11V6.966C11 4.992 10.5755 3.5 8.2675 3.5ZM0.6815 3.655V11H2.9615V3.655H0.6815Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 1.15715C11.5507 1.35606 11.074 1.48634 10.586 1.54365C11.0998 1.23599 11.4843 0.75214 11.668 0.182145C11.1848 0.468514 10.6564 0.670723 10.1055 0.780145C9.76798 0.419321 9.32971 0.168394 8.84768 0.0599907C8.36564 -0.0484125 7.86214 -0.00927573 7.40264 0.172312C6.94315 0.353899 6.54891 0.669536 6.27121 1.07818C5.9935 1.48682 5.84517 1.96957 5.8455 2.46365C5.8455 2.65715 5.867 2.84465 5.9105 3.02415C4.93126 2.97595 3.97316 2.72195 3.09864 2.2787C2.22413 1.83546 1.45283 1.21292 0.835 0.451645C0.615488 0.827398 0.500352 1.25497 0.5015 1.69015C0.5015 2.54365 0.935 3.29765 1.597 3.73915C1.20598 3.72674 0.823629 3.62078 0.482 3.43015V3.46165C0.481662 4.03023 0.678215 4.5814 1.03826 5.02147C1.3983 5.46154 1.89961 5.76336 2.457 5.87565C2.09453 5.97505 1.71406 5.98976 1.345 5.91865C1.5022 6.4078 1.80827 6.83563 2.22044 7.14239C2.63261 7.44914 3.13031 7.61949 3.644 7.62965C3.13332 8.03048 2.54861 8.32667 1.92332 8.50127C1.29804 8.67587 0.644464 8.72544 0 8.64715C1.12526 9.37128 2.43537 9.75579 3.7735 9.75465C8.3025 9.75465 10.7795 6.00265 10.7795 2.74865C10.7795 2.64365 10.7755 2.53565 10.7715 2.43015C11.2528 2.08167 11.6687 1.65088 12 1.15765V1.15715Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 0C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V6.5C0 7.29565 0.316071 8.05871 0.87868 8.62132C1.44129 9.18393 2.20435 9.5 3 9.5H6.5C7.29565 9.5 8.05871 9.18393 8.62132 8.62132C9.18393 8.05871 9.5 7.29565 9.5 6.5V4C9.5 3.86739 9.44732 3.74021 9.35355 3.64645C9.25979 3.55268 9.13261 3.5 9 3.5H8.5C8.36739 3.5 8.24021 3.44732 8.14645 3.35355C8.05268 3.25979 8 3.13261 8 3C8 2.20435 7.68393 1.44129 7.12132 0.87868C6.55871 0.316071 5.79565 0 5 0H3ZM3 2.5H5C5.275 2.5 5.5 2.725 5.5 3C5.5 3.275 5.275 3.5 5 3.5H3C2.725 3.5 2.5 3.275 2.5 3C2.5 2.725 2.725 2.5 3 2.5ZM3 6H6.5C6.775 6 7 6.225 7 6.5C7 6.775 6.775 7 6.5 7H3C2.725 7 2.5 6.775 2.5 6.5C2.5 6.225 2.725 6 3 6Z"
+                fill="currentColor"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

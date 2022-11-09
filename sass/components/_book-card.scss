@@ -1,0 +1,60 @@
+.book-card {
+  @include flex-center-column;
+
+  &__image {
+    background-color: #efeee8;
+    outline: 1px solid #eae8df;
+    cursor: pointer;
+  }
+
+  &__title {
+    padding-top: 2rem;
+    @include font($Prata, 400);
+    font-size: 2.2rem;
+    color: $dark-color;
+    cursor: pointer;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__autor {
+    @include font($Plus, 400);
+    font-size: 1.4rem;
+    color: #888888;
+  }
+
+  &__price {
+    padding-top: 2rem;
+    @include font($Prata, 400);
+    font-size: 1.8rem;
+    color: $primary-color;
+  }
+
+  &__discount {
+    @include font($Prata, 400);
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    color: #999999;
+    margin-right: 1rem;
+    position: relative;
+
+    &::before {
+      content: "15% OFF";
+      position: absolute;
+      top: -445px;
+      left: -35px;
+      width: 70px;
+      height: 20px;
+      font-size: 1.2rem;
+      @media (max-width: 768px) {
+        top: -425px;
+        left: -45px;
+      }
+
+      @include font($Plus, 500);
+      color: #f3f2ec;
+      background-color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@function rem-calc($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+@mixin font($family: false, $weight: false, $lh: false) {
+  @if $family {
+    font-family: $family;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}

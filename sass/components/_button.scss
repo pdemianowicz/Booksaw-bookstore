@@ -1,0 +1,15 @@
+button {
+  border: none;
+}
+
+.btn {
+  padding: 1.65rem 4.35rem;
+  color: $dark-color;
+  cursor: pointer;
+
+  &__primary {
+    text-transform: uppercase;
+    letter-spacing: 0.175rem;
+    border: 1px solid #c0c0c0;
+  }
+}

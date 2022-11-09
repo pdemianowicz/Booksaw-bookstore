@@ -1,0 +1,78 @@
+.section-best-book {
+  background-color: #edebe4;
+
+  & .best-book {
+    @include flex-center-column;
+    text-align: center;
+    padding: 6rem 1rem;
+    gap: 10rem;
+    @media (min-width: 850px) {
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-direction: row;
+      text-align: left;
+    }
+
+    &__image {
+      max-width: 400px;
+    }
+
+    &__info {
+      max-width: 470px;
+      color: $dark-color;
+    }
+
+    &__title {
+      @include font($Prata, 400);
+      font-size: 4.8rem;
+      position: relative;
+      @media (min-width: 850px) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 50px;
+          aspect-ratio: 1;
+          background-image: url(../images/best-selling-book-vector.svg);
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    &__autor {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+      color: #888888;
+      padding-top: 7rem;
+    }
+
+    &__book-name {
+      @include font($Prata, 400);
+      font-size: 2.8rem;
+      padding-top: 3rem;
+    }
+
+    &__book-info {
+      font-size: 1.6rem;
+      color: $text-color;
+      padding-top: 2rem;
+    }
+
+    &__price {
+      padding-top: 3.5rem;
+      @include font($Prata, 400);
+      font-size: 2.3rem;
+      color: $primary-color;
+    }
+
+    &__shop-now {
+      font-size: 1.6rem;
+      font-weight: 500;
+      padding-top: 6rem;
+      cursor: pointer;
+    }
+  }
+}

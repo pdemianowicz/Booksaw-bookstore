@@ -1,0 +1,113 @@
+.section-popular-books {
+  padding: 10rem 1rem;
+  @media (min-width: 850px) {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 18rem 1rem;
+  }
+
+  & .popular-books {
+    text-align: center;
+
+    &__info {
+      @include font($Plus, 500);
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      color: $text-color;
+      letter-spacing: 0.19rem;
+    }
+
+    &__title {
+      @include font($Prata, 400);
+      font-size: 4.8rem;
+      color: $dark-color;
+      display: flex;
+      flex-basis: 100%;
+      align-items: center;
+      justify-content: center;
+      @include mq(medium) {
+        &::before,
+        &::after {
+          content: "";
+          flex-grow: 1;
+          background-color: #e0e0e0;
+          height: 1px;
+          margin: 0px 80px;
+        }
+      }
+    }
+
+    &__nav {
+      @include flex-center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      font-weight: 500;
+      color: $mid-grey2;
+
+      & li {
+        padding: 0.5rem;
+        cursor: pointer;
+        &:hover {
+          color: $dark-color;
+        }
+      }
+
+      &--active {
+        color: $dark-color;
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+
+    &-wrapper {
+      display: grid;
+      align-items: center;
+      gap: 4rem;
+      padding: 5.5rem 0;
+      border-bottom: 1px solid #e0e0e0;
+      @media (min-width: 560px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media (min-width: 1121px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+
+  blockquote {
+    padding-top: 10rem;
+    max-width: 736px;
+    margin: 0 auto;
+    color: $dark-color;
+
+    & h2 {
+      @include font($Prata, 400);
+      font-size: 4.8rem;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        background-image: url(../images/best-selling-book-vector.svg);
+        background-repeat: no-repeat;
+      }
+    }
+
+    & p {
+      font-size: 2.6rem;
+      color: $text-color;
+      padding-top: 7rem;
+    }
+
+    & span {
+      display: block;
+      @include font($Prata, 400);
+      font-size: 2.2rem;
+      padding-top: 2rem;
+    }
+  }
+}

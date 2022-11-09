@@ -1,0 +1,70 @@
+.header {
+  .wrapper {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    @include mq(small) {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .social-nav {
+      display: inline-flex;
+      color: $text-color;
+
+      & li {
+        cursor: pointer;
+        padding: 0.5rem;
+        @include mq(small) {
+          padding: 1rem;
+        }
+        &:hover {
+          color: $dark-color;
+        }
+      }
+    }
+
+    .account-nav {
+      display: inline-flex;
+      color: $mid-grey;
+      font-size: 1.2rem;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+      gap: 1rem;
+      @media (max-width: 40em) {
+        gap: 0.5rem;
+        a {
+          display: none;
+        }
+      }
+
+      & li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+        padding: 1rem;
+
+        &:hover {
+          color: $dark-color;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    @include mq(small) {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+}

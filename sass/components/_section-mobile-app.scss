@@ -1,0 +1,85 @@
+.section-mobile-app {
+  background-color: #edebe4;
+  @media (min-width: 850px) {
+    background-image: url(../images/mobile-app-bg2.svg), url(../images/mobile-app-bg3.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+  }
+
+  .mobile-app {
+    @include flex-center-column;
+    gap: 4rem;
+    padding: 6rem 1rem;
+    text-align: center;
+    @media (min-width: 850px) {
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-direction: row;
+      background-image: url(../images/mobile-app-bg1.svg);
+      background-repeat: no-repeat;
+      background-position: top left;
+      text-align: left;
+    }
+
+    &__image {
+      max-width: 333px;
+    }
+
+    &__info {
+      max-width: 620px;
+    }
+
+    &__title {
+      @include font($Prata, 400);
+      font-size: 4.8rem;
+      color: $dark-color;
+      position: relative;
+      @media (min-width: 850px) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 50px;
+          height: 50px;
+          background-image: url(../images/best-selling-book-vector.svg);
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    &__text {
+      padding-top: 4rem;
+      color: $text-color;
+      font-size: 1.6rem;
+      line-height: 208%;
+    }
+  }
+  & .wrapper {
+    padding-top: 4rem;
+    display: inline-flex;
+    gap: 2rem;
+
+    .btn-mobile-app {
+      display: grid;
+      grid-template-columns: 25px 1fr;
+      align-items: center;
+      padding: 0.5rem 1.25rem;
+      border-radius: 6px;
+      color: $white-color;
+      background-color: $dark-color;
+      font-size: 0.9rem;
+
+      & p {
+        text-align: left;
+        margin-left: 1rem;
+      }
+
+      & span {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

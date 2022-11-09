@@ -1,0 +1,30 @@
+// .arrow-right {
+//   display: inline-block;
+//   background: $dark-color;
+//   height: 3px;
+//   width: 30px;
+//   //   margin: 0 auto;
+//   position: relative;
+//   cursor: pointer;
+
+//   &:before,
+//   &:after {
+//     content: "";
+//     background: $dark-color;
+//     position: absolute;
+//     height: 3px;
+//     width: 15px;
+//   }
+
+//   &:before {
+//     right: -3px;
+//     bottom: -4px;
+//     transform: rotate(-45deg);
+//   }
+
+//   &:after {
+//     right: -3px;
+//     top: -4px;
+//     transform: rotate(45deg);
+//   }
+// }

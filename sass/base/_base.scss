@@ -1,0 +1,21 @@
+:root {
+  font-size: 62.5%;
+  /* 1rem = 10px, 0.1rem = 1px */
+
+  @media (max-width: 1250px) {
+    font-size: 57%;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 53%;
+  }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: $Plus;
+  font-size: 1.6rem;
+  color: $dark-color;
+  background-color: #f3f2ec;
+}

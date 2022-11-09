@@ -1,0 +1,44 @@
+.article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__image {
+    background-color: #efeee8;
+    outline: 1px solid #eae8df;
+  }
+
+  &__date {
+    padding-top: 3rem;
+    @include font($Prata, 400);
+    font-size: 1.5rem;
+    color: $primary-color;
+  }
+
+  &__title {
+    @include font($Prata, 400);
+    font-size: 2.6rem;
+    color: $dark-color;
+    max-width: fit-content;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #c8c8c8;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    & ul {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      text-transform: uppercase;
+      color: $text-color;
+      font-size: 1.5rem;
+      letter-spacing: 0.125rem;
+    }
+  }
+}
