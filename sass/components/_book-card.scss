@@ -29,32 +29,35 @@
     @include font($Prata, 400);
     font-size: 1.8rem;
     color: $primary-color;
+    position: relative;
   }
 
-  &__discount {
+  &__old-price {
     @include font($Prata, 400);
     text-decoration: line-through;
     font-size: 1.4rem;
     color: #999999;
     margin-right: 1rem;
-    position: relative;
+  }
 
-    &::before {
-      content: "15% OFF";
-      position: absolute;
-      top: -445px;
-      left: -35px;
-      width: 70px;
-      height: 20px;
-      font-size: 1.2rem;
-      @media (max-width: 768px) {
-        top: -425px;
-        left: -45px;
-      }
-
-      @include font($Plus, 500);
-      color: #f3f2ec;
-      background-color: $primary-color;
+  &__discount {
+    content: "";
+    position: absolute;
+    top: -47.5rem;
+    left: -5rem;
+    @media (min-width: 550px) {
+      top: -45rem;
+      left: -4.5rem;
     }
+    @media (min-width: 1121px) {
+      top: -41rem;
+      left: -3rem;
+    }
+    width: 7rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    @include font($Plus, 500);
+    color: #f3f2ec;
+    background-color: $primary-color;
   }
 }

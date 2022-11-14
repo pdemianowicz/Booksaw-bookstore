@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Life Of The Wild",
+    "autor": "Sanchit Howdy",
+    "image": "./images/books/Life-Of-The-Wild.png",
+    "price": "45.00",
+    "discount": "0",
+    "featured": false,
+    "bestseller": false,
+    "promoted": true
+  },
+  {
+    "id": 2,
+    "title": "Simple Way Of Piece Life",
+    "autor": "Armor Ramsey",
+    "image": "./images/books/simple-way-of-piecce-life.png",
+    "price": "40.00",
+    "discount": "0",
+    "featured": true,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 3,
+    "title": "Great Travel At Desert",
+    "autor": "Sanchit Howdy",
+    "image": "./images/books/great-trawel-at-desert.png",
+    "price": "38.00",
+    "discount": "0",
+    "featured": true,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 4,
+    "title": "The Lady Beauty Scarlett",
+    "autor": "Arthur Doyle",
+    "image": "./images/books/the-lady-beauty-scarlett.png",
+    "price": "45.00",
+    "discount": "0",
+    "featured": true,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 5,
+    "title": "Once Upon A Time",
+    "autor": "Klien Marry",
+    "image": "./images/books/once-upon-a-time.png",
+    "price": "35.00",
+    "discount": "0",
+    "featured": true,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 6,
+    "title": "Birds Gonna Be Happy",
+    "autor": "Timbur Hood",
+    "image": "./images/books/Birds-Gonna-Be-Happy.png",
+    "price": "45.00",
+    "discount": "0",
+    "featured": false,
+    "bestseller": true,
+    "promoted": false
+  },
+  {
+    "id": 7,
+    "title": "Portrait Photography",
+    "autor": "Adam Silber",
+    "image": "./images/books/portrait-photography.png",
+    "price": "45.00",
+    "discount": "0",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 8,
+    "title": "Tips Of Simple Lifestyle",
+    "autor": "Bratt Smith",
+    "image": "./images/books/tips-of-simple-lifstyle.png",
+    "price": "35.00",
+    "discount": "0",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 9,
+    "title": "Just Felt From Outside",
+    "autor": "Nicole Wilson",
+    "image": "./images/books/just-felt-form-outside.png",
+    "price": "40.00",
+    "discount": "0",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 10,
+    "title": "Peaceful Enlightment",
+    "autor": "Marmik Lama",
+    "image": "./images/books/peaceful-enlightment.png",
+    "price": "45.00",
+    "discount": "0",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 11,
+    "title": "Life Among The Pirates",
+    "autor": "Armor Ramsey",
+    "image": "./images/books/life-among-the-pirates.png",
+    "price": "40.00",
+    "discount": "0",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 12,
+    "title": "Way Of Happiness",
+    "autor": "Ananda Kumar",
+    "image": "./images/books/way-of-happiness.png",
+    "price": "50.00",
+    "discount": "20",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 13,
+    "title": "Fashion System",
+    "autor": "Kevin Spear",
+    "image": "./images/books/fashion-system.png",
+    "price": "40.00",
+    "discount": "15",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 14,
+    "title": "Musical",
+    "autor": "Karim Achard",
+    "image": "./images/books/musical.png",
+    "price": "45.00",
+    "discount": "20",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  },
+  {
+    "id": 15,
+    "title": "Life Of Seacrits",
+    "autor": "Galista Marie",
+    "image": "./images/books/life-of-seacrits.png",
+    "price": "45.00",
+    "discount": "25",
+    "featured": false,
+    "bestseller": false,
+    "promoted": false
+  }
+]

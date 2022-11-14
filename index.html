@@ -15,7 +15,7 @@
     />
 
     <link rel="stylesheet" href="./disc/style.css" />
-    <script defer src="./main.js"></script>
+    <script defer type="module" src="./main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -121,7 +121,7 @@
     <main>
       <section class="section-hero">
         <div class="section-hero__image">
-          <img src="./images/hero-book.png" alt="Life Of The Wild - book" />
+          <img src="./images/books/Life-Of-The-Wild.png" alt="Life Of The Wild - book" />
         </div>
         <div class="section-hero__text">
           <h1>Life Of The Wild</h1>
@@ -147,43 +147,12 @@
         <div class="featured-books">
           <p class="featured-books__info">Some quality items</p>
           <h2 class="featured-books__title hr-sect">Featured Books</h2>
-          <div class="featured-books-wrapper">
-            <div class="book-card">
-              <img class="book-card__image" src="./images/simple-way-of-piecce-life.png" alt="" />
-              <h3 class="book-card__title">Simple Way Of Piece Life</h3>
-              <p class="book-card__autor">Armor Ramsey</p>
-              <p class="book-card__price">$ 40.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/great-trawel-at-desert.png" alt="" />
-              <h3 class="book-card__title">Great Travel At Desert</h3>
-              <p class="book-card__autor">Sanchit Howdy</p>
-              <p class="book-card__price">$ 38.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/the-lady-beauty-scarlett.png" alt="" />
-              <h3 class="book-card__title">The Lady Beauty Scarlett</h3>
-              <p class="book-card__autor">Arthur Doyle</p>
-              <p class="book-card__price">$ 45.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/once-upon-a-time.png" alt="" />
-              <h3 class="book-card__title">Once Upon A Time</h3>
-              <p class="book-card__autor">Klien Marry</p>
-              <p class="book-card__price">$ 35.00</p>
-            </div>
-          </div>
+          <div class="featured-books-wrapper"></div>
           <div class="pagination">
             <ul>
-              <li>
-                <span class="dot dot--active"></span>
-              </li>
-              <li>
-                <span class="dot"></span>
-              </li>
-              <li>
-                <span class="dot"></span>
-              </li>
+              <li><span class="dot dot--active"></span></li>
+              <li><span class="dot"></span></li>
+              <li><span class="dot"></span></li>
             </ul>
             <p class="pagination__view-all">View all products<span class="arrow-right"></span></p>
           </div>
@@ -193,7 +162,7 @@
       <section class="section-best-book">
         <div class="best-book">
           <div class="best-book__image">
-            <img src="./images/best-book.png" alt="" />
+            <img src="./images/books/Birds-Gonna-Be-Happy.png" alt="" />
           </div>
           <div class="best-book__info">
             <h2 class="best-book__title">Best Selling Book</h2>
@@ -221,56 +190,7 @@
             <li><a href="#">Romantic</a></li>
             <li><a href="#">Fictional</a></li>
           </ul>
-          <div class="popular-books-wrapper">
-            <div class="book-card">
-              <img class="book-card__image" src="./images/portrait-photography.png" alt="" />
-              <h3 class="book-card__title">Portrait Photography</h3>
-              <p class="book-card__autor">Adam Silber</p>
-              <p class="book-card__price">$ 45.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/once-upon-a-time.png" alt="" />
-              <h3 class="book-card__title">Once upon a time</h3>
-              <p class="book-card__autor">Klien Marry</p>
-              <p class="book-card__price">$ 35.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/tips-of-simple-lifstyle.png" alt="" />
-              <h3 class="book-card__title">Tips Of Simple Lifestyle</h3>
-              <p class="book-card__autor">Bratt Smith</p>
-              <p class="book-card__price">$ 35.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/just-felt-form-outside.png" alt="" />
-              <h3 class="book-card__title">Just Felt From Outside</h3>
-              <p class="book-card__autor">Nicole Wilson</p>
-              <p class="book-card__price">$ 40.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/peaceful-enlightment.png" alt="" />
-              <h3 class="book-card__title">Peaceful Enlightment</h3>
-              <p class="book-card__autor">Marmik Lama</p>
-              <p class="book-card__price">$ 45.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/great-trawel-at-desert.png" alt="" />
-              <h3 class="book-card__title">Great Travel At Desert</h3>
-              <p class="book-card__autor">Sanchit Howdy</p>
-              <p class="book-card__price">$ 38.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/life-among-the-pirates.png" alt="" />
-              <h3 class="book-card__title">Life Among The Pirates</h3>
-              <p class="book-card__autor">Armor Ramsey</p>
-              <p class="book-card__price">$ 40.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/simple-way-of-piecce-life.png" alt="" />
-              <h3 class="book-card__title">Simple Way Of Piece Life</h3>
-              <p class="book-card__autor">David Woodard</p>
-              <p class="book-card__price">$ 38.00</p>
-            </div>
-          </div>
+          <div class="popular-books-wrapper"></div>
           <blockquote>
             <h2>Quote of the day</h2>
             <p>
@@ -285,43 +205,12 @@
         <div class="books-offer">
           <p class="books-offer__info">Grab your opportunity</p>
           <h2 class="books-offer__title hr-sect">Books With Offer</h2>
-          <div class="books-offer-wrapper">
-            <div class="book-card">
-              <img class="book-card__image" src="./images/way-of-happiness.png" alt="" />
-              <h3 class="book-card__title">Way Of Happiness</h3>
-              <p class="book-card__autor">Ananda Kumar</p>
-              <p class="book-card__price"><span class="book-card__discount">$ 50.00</span>$ 40.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/fashion-system.png" alt="" />
-              <h3 class="book-card__title">Fashion System</h3>
-              <p class="book-card__autor">Kevin Spear</p>
-              <p class="book-card__price"><span class="book-card__discount">$ 40.00</span>$ 35.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/musical.png" alt="" />
-              <h3 class="book-card__title">Musical</h3>
-              <p class="book-card__autor">Karim Achard</p>
-              <p class="book-card__price"><span class="book-card__discount">$ 45.00</span>$ 36.00</p>
-            </div>
-            <div class="book-card">
-              <img class="book-card__image" src="./images/life-of-seacrits.png" alt="" />
-              <h3 class="book-card__title">Life Of Seacrits</h3>
-              <p class="book-card__autor">Galista Marie</p>
-              <p class="book-card__price"><span class="book-card__discount">$ 45.00</span>$ 32.00</p>
-            </div>
-          </div>
+          <div class="books-offer-wrapper"></div>
           <div class="pagination">
             <ul>
-              <li>
-                <span class="dot dot--active"></span>
-              </li>
-              <li>
-                <span class="dot"></span>
-              </li>
-              <li>
-                <span class="dot"></span>
-              </li>
+              <li><span class="dot dot--active"></span></li>
+              <li><span class="dot"></span></li>
+              <li><span class="dot"></span></li>
             </ul>
             <p class="pagination__view-all">View all products<span class="arrow-right"></span></p>
           </div>
